@@ -1,6 +1,8 @@
 /* =============================================
    RESET BÁSICO Y TIPOGRAFÍA GENERAL
    ============================================= */
+
+/*Commit N°1 Presentación*/
 * {
     margin: 0;
     padding: 0;
@@ -87,6 +89,23 @@ header {
 
 .presentacion {
     padding: 4rem 5%;
+    background: linear-gradient(135deg, #1c2938 0%, #244266 100%);
+    border-bottom: 1px solid #1a3a5b;
+}
+
+.presentacion-contenido {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+}
+
+.presentacion-texto {
+    flex: 1;
 }
 
 .presentacion-titulo {
@@ -99,41 +118,162 @@ header {
 
 .presentacion-saludo {
     font-size: 2.5rem;
-    color: #666;
+    color: white;
     font-weight: 400;
 }
 
 .presentacion-nombre {
     font-size: 2.5rem;
-    color: #1e2a3a;
+    color: #4f9bf1;
     font-weight: 700;
 }
 
 .presentacion-profesion {
     font-size: 1.5rem;
-    color: #4a90e2;
+    color: white;
     margin-bottom: 1.5rem;
     font-weight: 500;
 }
 
 .presentacion-descripcion {
     font-size: 1.1rem;
-    color: #555;
+    color: white;
     max-width: 500px;
     line-height: 1.8;
 }
 
 .presentacion-imagen {
-    flex: 0 0 auto;
+    flex-shrink: 0;
 }
 
 .presentacion-imagen img {
+    display: block;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    border: 4px solid white;
     box-shadow: 0 0 0 4px #4a90e2, 0 10px 25px rgba(0,0,0,0.15);
+    border: 4px solid white;
 }
+.sobre-mi {
+    padding: 4rem 5%;
+    background-color: #ffffff;
+    border-top: 1px solid #eaeaea;
+}
+
+.seccion-titulo {
+    font-size: 2.5rem;
+    color: #1e2a3a;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.seccion-titulo::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #4a90e2;
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+/*Commit N°2 Sección Sobre mí*/
+
+.sobre-mi-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobre-mi-article {
+    flex: 2;
+    min-width: 300px;
+}
+
+.sobre-mi-subtitulo {
+    font-size: 1.8rem;
+    color: #1e2a3a;
+    margin-bottom: 1.5rem;
+}
+
+.sobre-mi-texto {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.sobre-mi-texto strong {
+    color: #1e2a3a;
+    font-weight: 700;
+}
+
+.sobre-mi-texto em {
+    color: #4a90e2;
+    font-style: italic;
+}
+
+.sobre-mi-cita {
+    background-color: #f5f7fa;
+    padding: 2rem;
+    border-left: 5px solid #4a90e2;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    border-radius: 0 8px 8px 0;
+}
+
+.cita-autor {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-style: normal;
+    color: #777;
+}
+
+.sobre-mi-aside {
+    flex: 1;
+    min-width: 280px;
+    background-color: #f5f7fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.aside-titulo {
+    font-size: 1.5rem;
+    color: #1e2a3a;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #4a90e2;
+}
+
+.datos-lista {
+    list-style: none;
+}
+
+.datos-lista li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.05rem;
+    color: #444;
+}
+
+.datos-lista li:last-child {
+    border-bottom: none;
+}
+
+.datos-lista li strong {
+    color: #1e2a3a;
+    font-weight: 700;
+    display: inline-block;
+    min-width: 80px;
+}
+
+/*Footer provisional*/
 
 footer {
     background-color: #1e2a3a;
