@@ -731,3 +731,161 @@ footer {
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.9rem;
 }
+
+/* =============================================
+   MEDIA QUERIES
+   ============================================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .presentacion-contenido {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .presentacion-texto {
+        order: 2;
+    }
+    
+    .presentacion-imagen {
+        order: 1;
+    }
+    
+    .presentacion-descripcion {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .sobre-mi-contenido {
+        flex-direction: column;
+    }
+    
+    .habilidades-listas {
+        flex-direction: column;
+    }
+    
+    .proyectos-contenido {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .dos-columnas {
+        flex-direction: column;
+    }
+    
+    .header-izquierda {
+        margin-bottom: 1rem;
+    }
+    
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .footer-superior {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-logo-nombre {
+        justify-content: center;
+    }
+    
+    .footer-redes {
+        justify-content: center;
+    }
+    
+    .seccion-titulo {
+        font-size: 2rem;
+    }
+    
+    .presentacion-nombre {
+        font-size: 2rem;
+    }
+    
+    .presentacion-saludo {
+        font-size: 2rem;
+    }
+}
+
+/* Celular*/
+
+@media (max-width: 480px) {
+    .presentacion {
+        padding: 2rem 5%;
+    }
+    
+    .presentacion-nombre {
+        font-size: 1.8rem;
+    }
+    
+    .presentacion-saludo {
+        font-size: 1.8rem;
+    }
+    
+    .presentacion-titulo {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .proyectos-contenido {
+        grid-template-columns: 1fr;
+    }
+    
+    .habilidades-tabla {
+        overflow-x: auto;
+    }
+    
+    .tabla-tech {
+        min-width: 500px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .nav-links li a {
+        display: block;
+        padding: 0.5rem;
+    }
+    
+    .formulario-contacto {
+        padding: 1.5rem;
+    }
+    
+    .btn-enviar {
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .footer-superior {
+        gap: 1.5rem;
+    }
+    
+    .footer-nombre {
+        font-size: 1.2rem;
+    }
+    
+    .seccion-titulo {
+        font-size: 1.8rem;
+    }
+    
+    .sobre-mi-subtitulo {
+        font-size: 1.5rem;
+    }
+    
+    .sobre-mi-cita {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .contacto-descripcion {
+        font-size: 1rem;
+    }
+}
