@@ -273,6 +273,134 @@ header {
     min-width: 80px;
 }
 
+/*Commit N°3 Sección Habilidades*/
+
+.habilidades {
+    padding: 4rem 5%;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.habilidades-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.habilidades-subtitulo {
+    font-size: 1.5rem;
+    color: #1e2a3a;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.habilidades-tabla {
+    width: 100%;
+}
+
+.tabla-tech {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.tabla-tech thead {
+    background-color: #1e2a3a;
+    color: white;
+}
+
+.tabla-tech th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.tabla-tech td {
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tabla-tech tbody tr:hover {
+    background-color: #f5f7fa;
+}
+
+.barra-dominio {
+    width: 120px;
+    height: 12px;
+    background-color: #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.barra-progreso {
+    height: 100%;
+    border-radius: 6px;
+}
+
+.barra-progreso.avanzado {
+    width: 95%;
+    background: linear-gradient(90deg, #2ecc71, #27ae60);
+}
+
+.barra-progreso.intermedio-alto {
+    width: 75%;
+    background: linear-gradient(90deg, #3498db, #2980b9);
+}
+
+.barra-progreso.intermedio {
+    width: 60%;
+    background: linear-gradient(90deg, #f39c12, #e67e22);
+}
+
+.barra-progreso.basico {
+    width: 35%;
+    background: linear-gradient(90deg, #e74c3c, #c0392b);
+}
+
+.habilidades-listas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.lista-container {
+    flex: 1;
+    min-width: 280px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.competencias-lista {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.competencias-lista li {
+    padding: 0.8rem 0;
+    color: #444;
+    font-size: 1.05rem;
+}
+
+.ruta-lista {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+}
+
+.ruta-lista li {
+    padding: 0.8rem 0;
+    color: #444;
+    font-size: 1.05rem;
+}
+
 /*Footer provisional*/
 
 footer {
