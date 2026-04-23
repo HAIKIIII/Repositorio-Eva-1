@@ -401,6 +401,86 @@ header {
     font-size: 1.05rem;
 }
 
+/*Commit N°4 Sección Proyectos*/
+
+.proyectos {
+    padding: 4rem 5%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.proyectos-contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.proyecto-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.proyecto-imagen {
+    margin: 0;
+    padding: 0;
+}
+
+.proyecto-imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.proyecto-info {
+    padding: 1.5rem;
+}
+
+.proyecto-titulo {
+    font-size: 1.3rem;
+    color: #1e2a3a;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.proyecto-descripcion {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+.proyecto-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.proyecto-link {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: #4a90e2;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.proyecto-link:hover {
+    background-color: #1e2a3a;
+}
+
 /*Footer provisional*/
 
 footer {
