@@ -634,12 +634,100 @@ header {
     color: #444;
 }
 
-/*Footer provisional*/
+/*Footer*/
 
 footer {
     background-color: #1e2a3a;
     color: white;
-    text-align: center;
     padding: 1.5rem;
     margin-top: 3rem;
+}
+
+.footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo-nombre {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-texto {
+    display: inline-block;
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-nombre {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 1rem;
+}
+
+.red-social-cuadro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.red-social-cuadro span {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.red-social-cuadro:hover {
+    background-color: #4a90e2;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.footer-inferior {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
 }
